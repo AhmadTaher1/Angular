@@ -1,0 +1,31 @@
+/* filter-summary.css */
+.summary-box {
+  background-color: #e6ffe6;
+  border: 1px solid #00cc00;
+  border-radius: 8px;
+  max-width: 100%; /* ياخد العرض كله */
+  margin: 20px auto;
+  padding: 10px 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  justify-content: center; /* يتوسط المحتوى عرضياً */
+  gap: 15px; /* مسافة بين العناصر */
+  font-size: 0.75rem; /* حجم صغير جداً للخط */
+  flex-wrap: wrap; /* يلف المحتوى لو ضاق العرض */
+}
+
+.summary-box h5 {
+  flex-basis: 100%; /* يخلي العنوان يأخذ السطر كامل */
+  margin-bottom: 10px;
+  color: #006600;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.summary-box p {
+  margin: 0;
+  color: #004d00;
+  white-space: nowrap; /* يمنع لف النص داخل كل فقرة */
+}

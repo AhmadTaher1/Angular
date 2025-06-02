@@ -1,0 +1,6 @@
+<div class="summary-box p-3 border rounded">
+  <h5>Current Filter</h5>
+  <p>Category: {{ filter.category || 'All' }}</p>
+  <p>Title: {{ filter.title || 'Any' }}</p>
+  <p>Max Price: {{ filter.maxPrice !== null ? filter.maxPrice : 'No limit' }}</p>
+</div>

@@ -1,0 +1,19 @@
+  <div class="filter-container d-flex align-items-center p-2">
+    <div class="me-3">
+      <label for="categorySelect" class="form-label visually-hidden">Category</label>
+      <select id="categorySelect" class="form-select form-select-sm" [(ngModel)]="selectedCategory" (change)="onFilterChange()">
+        <option value="">All Categories</option>
+        <option *ngFor="let cat of categories" [value]="cat">{{ cat }}</option>
+      </select>
+    </div>
+
+    <div class="me-3">
+      <label for="titleInput" class="form-label visually-hidden">Product Title</label>
+      <input id="titleInput" type="text" class="form-control form-control-sm" placeholder="Product title" [(ngModel)]="productTitle" (input)="onFilterChange()" />
+    </div>
+
+    <div class="me-3">
+      <label for="maxPriceInput" class="form-label visually-hidden">Max Price</label>
+      <input id="maxPriceInput" type="number" class="form-control form-control-sm" placeholder="Max price" [(ngModel)]="maxPrice" (input)="onFilterChange()" />
+    </div>
+  </div>

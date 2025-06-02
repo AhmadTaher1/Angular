@@ -1,0 +1,30 @@
+
+.footer {
+  background-color: #222;
+  color: #eee;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  text-align: center;
+  position: static; /* Static footer, stays below content */
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(15, 97, 159, 0.26);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-nav a {
+  color: #aaddff;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #66bbff;
+  text-decoration: underline;
+}

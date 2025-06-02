@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.css'
 })
 export class App {
-  protected title = 'Day1';
+  currentFilter: { category: string; title: string; maxPrice: number | null } = {
+    category: '',
+    title: '',
+    maxPrice: null
+  };
+
+  onFilterChanged(filterData: {category: string, title: string, maxPrice: number | null}) {
+    this.currentFilter = filterData;
+  }
 }
